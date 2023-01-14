@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+</head>
+<body>
+    <p id="number" style="font-weight:800; font-size:75px ; text align: center"></p>
+    <input type="number" id="answer">
+    <button onclick="answer()">Submit</button> 
+    <p id="result"></p>
+    <p id="nun"></p>
+    <p id="final"></p>
+
+    <script>
+        count_of_numbers = 0
+        nun = 0
+        setInterval(numbers,1000)
+        function number()
+        {
+            if(count_of_numbers<10)
+            {
+                rando = Math.floor(Math.random()*10)
+                document.getElementById("number").innerHTML = random
+                count_of_numbers ++
+                nun = nun + random
+            }
+        }
+        function answer()
+        {
+            input_answer = document.getElementById("answer").value
+            document.getElementById("result").innerHTML = input_answer
+            document.getElementById("nun").innerHTML = nun
+            if(input_answer == nun)
+            (
+                document.getElementById("final").innerHTML = "Right"
+            )
+        }
+
+    </script>
+</body>
+
+</html>
