@@ -9,10 +9,10 @@
 <body>
     <p id="nummer" style="font-weight:700; font-size:75px ; text-align:center;"></p>
     <input type="number" id="antwort">
-    <button onclick="antwort()">submit</button>
+    <button onclick="lösung()">submit</button>
     <p id="sum"></p>
     <p id="result"></p>
-    <p id="idk"></p>
+    <p id="kp"></p>
     <script>
         count_of_numbers = 0
         sum = 0
@@ -30,9 +30,9 @@
             }
 
         }    
-        function antwort()
+        function lösung()
         {
-            input_answer = document.getElementById("antwort").value
+            input_answer = document.getElementById("lösung").value
             document.getElementById("result").innerHTML= input_answer
             document.getElementById("result").innerHTML = sum
             if(input_anwer ==sum)
